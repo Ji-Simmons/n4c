@@ -26,39 +26,39 @@ export default function Pics() {
         <div className="pictures">
             <div className="pictures-cell">
                 <img src="gallery/1.jpg" alt="1" className="pictures-cell_img"/>
-                    <div className="pictures-cell_text">One</div>
+                    
             </div>
             <div className="pictures-cell">
                 <img src="gallery/2.jpg" alt="2" className="pictures-cell_img"/>
-                    <div className="pictures-cell_text">Two</div>
+                    
             </div>
             <div className="pictures-cell">
                 <img src="gallery/3.jpg" alt="3" className="pictures-cell_img"/>
-                    <div className="pictures-cell_text">Three</div>
+                    
             </div>
             <div className="pictures-cell">
                 <img src="gallery/4.jpg" alt="4" className="pictures-cell_img"/>
-                   <div className="pictures-cell_text">Four</div>
+                   
             </div>
             <div className="pictures-cell">
                 <img src="gallery/5.jpg" alt="5" className="pictures-cell_img"/>
-                    <div className="pictures-cell_text">Five</div>
+                    
             </div>
             <div className="pictures-cell">
                 <img src="gallery/6.jpg" alt="6" className="pictures-cell_img"/>
-                    <div className="pictures-cell_text">Six</div>
+                    
             </div>
             <div className="pictures-cell">
                 <img src="gallery/7.jpg" alt="7" className="pictures-cell_img"/>
-                    <div className="pictures-cell_text">Seven</div>
+                   
             </div>
             <div className="pictures-cell">
                 <img src="gallery/8.jpg" alt="8" className="pictures-cell_img"/>
-                    <div className="pictures-cell_text">Eight</div>
+                   
             </div>
             <div className="pictures-cell">
                 <img src="gallery/9.jpg" alt="9" className="pictures-cell_img"/>
-                    <div className="pictures-cell_text">Nine</div>
+                    
             </div>
         </div>
     </div>
