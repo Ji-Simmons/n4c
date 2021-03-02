@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../App.css';
 
 
@@ -25,40 +26,51 @@ export default function Pics() {
     
         <div className="pictures">
             <div className="pictures-cell">
+                
+                <Link to='./gallery'>
                 <img src="gallery/1.jpg" alt="1" className="pictures-cell_img"/>
-                    
+            </Link>
+
             </div>
             <div className="pictures-cell">
+            <Link to='./gallery'>
                 <img src="gallery/2.jpg" alt="2" className="pictures-cell_img"/>
-                    
+                    </Link>
             </div>
             <div className="pictures-cell">
+            <Link to='./gallery'>
                 <img src="gallery/3.jpg" alt="3" className="pictures-cell_img"/>
-                    
+                    </Link>
             </div>
             <div className="pictures-cell">
+            <Link to='./gallery'>
                 <img src="gallery/4.jpg" alt="4" className="pictures-cell_img"/>
-                   
+                   </Link>
             </div>
             <div className="pictures-cell">
+            <Link to='./gallery'>
                 <img src="gallery/5.jpg" alt="5" className="pictures-cell_img"/>
-                    
+                    </Link>
             </div>
             <div className="pictures-cell">
+            <Link to='./gallery'>
                 <img src="gallery/6.jpg" alt="6" className="pictures-cell_img"/>
-                    
+                    </Link>
             </div>
             <div className="pictures-cell">
+            <Link to='./gallery'>
                 <img src="gallery/7.jpg" alt="7" className="pictures-cell_img"/>
-                   
+                   </Link>
             </div>
             <div className="pictures-cell">
+            <Link to='./gallery'>
                 <img src="gallery/8.jpg" alt="8" className="pictures-cell_img"/>
-                   
+                   </Link>
             </div>
             <div className="pictures-cell">
+            <Link to='./gallery'>
                 <img src="gallery/9.jpg" alt="9" className="pictures-cell_img"/>
-                    
+                    </Link>
             </div>
         </div>
     </div>

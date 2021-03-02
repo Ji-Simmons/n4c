@@ -1,22 +1,17 @@
 export const MenuItems = [
     {
-        title: 'Pics',
+        title: 'Pictures and specs',
         path: '/pics',
         cName: 'dropdown-link'
     },
     {
-        title: 'Specs',
-        path: '/specs',
+        title: 'T/T Snowdrift',
+        path: '/tenderto',
         cName: 'dropdown-link'
     },
     {
-        title: 'Placeholder1',
-        path: '/placeholder1',
-        cName: 'dropdown-link'
-    },
-    {
-        title: 'Placeholder2',
-        path: '/placeholder2',
+        title: 'Gear we use',
+        path: '/gear',
         cName: 'dropdown-link'
     }
 ]

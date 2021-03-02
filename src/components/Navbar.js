@@ -53,7 +53,7 @@ function Navbar() {
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to='/snowdrift'
+              // to='/snowdrift'
               className='nav-links'
               onClick={closeMobileMenu}
             >
