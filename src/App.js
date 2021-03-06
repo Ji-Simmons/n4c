@@ -19,6 +19,7 @@ import { TtSliderData } from './components/pages/TtSliderData';
 import TtGallery from './components/pages/TtGallery';
 
 
+
 function App() {
   return (
     <Router>
@@ -40,6 +41,7 @@ function App() {
         <Route path='/pics' exact component={Pics} />
         {/* <Route path='/specs' exact component={Specs} /> */}
       </Switch>
+      
     </Router>
   );
 }
