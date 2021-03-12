@@ -47,6 +47,15 @@ function Navbar() {
               About Us
             </Link>
           </li>
+          <li className='nav-item'>
+            <Link
+              to='/ddd'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              DDD
+            </Link>
+          </li>
           <li
             className='nav-item'
             onMouseEnter={onMouseEnter}

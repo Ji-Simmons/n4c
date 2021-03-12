@@ -33,7 +33,7 @@ const ImageSlider = ({ slides }) => {
             {index === current && (
               <img src={slide.image} alt='travel image' className='image' />
             )}
-            <h1>hey</h1>
+            
           </div>
         );
       })}

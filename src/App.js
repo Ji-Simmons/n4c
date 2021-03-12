@@ -17,7 +17,7 @@ import TtImageSlider from './components/pages/TtImageSlider';
 import { SliderData } from './components/pages/SliderData';
 import { TtSliderData } from './components/pages/TtSliderData';
 import TtGallery from './components/pages/TtGallery';
-
+import DDD from './components/pages/DDD';
 
 
 function App() {
@@ -39,6 +39,7 @@ function App() {
         <Route path='/contact-us' exact component={ContactUs} />
         <Route path='/sign-up' exact component={SignUp} />
         <Route path='/pics' exact component={Pics} />
+        <Route path='/DDD' exact component={DDD} />
         {/* <Route path='/specs' exact component={Specs} /> */}
       </Switch>
       
