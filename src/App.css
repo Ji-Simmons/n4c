@@ -1,8 +1,27 @@
 * {
   font-family: 'Lexend Mega', sans-serif;
 }
-/* POPUP */
+/*START DDD CSS*/
+.task-header {
+  background-color: white;
+}
+.todo {
+  background-color: red;
+}
+.wip {
+  background-color: yellow
+}
+.complete {
+  background-color: green;
+}
+.fib {
+  background-color: brown;
+}
 
+
+/*END DDD CSS*/
+
+/*START POPUP CSS*/
 .popup {
   position: fixed;
   width: 100%;
@@ -24,8 +43,7 @@
   border-radius: 20px;
   background: white;
 }
-
-/* /POPUP */
+/* END POPUP CSS*/
 
 .pics {
   display: flex;

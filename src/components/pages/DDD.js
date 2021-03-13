@@ -5,10 +5,10 @@ import '../../App.css';
 export default class DDD extends Component {
     state = {
         tasks: [
-            {name:"Something to do.",category:"wip", bgcolor: "yellow"},
-            {name:"No sense starting now; break's in 45 minutes.", category:"wip", bgcolor:"yellow"},
-            {name:"Well, I guess halfass is better than no ass, so stick a fork in this one and grab yourself a beer, champ.  You earned it.", category:"complete", bgcolor:"green"},
-            {name:"Oh, you thought you were done?  Well, here's another task!", category:"todo", bgcolor:"red"}
+            {name:"It'd be done by now, but I'm waiting for the TO to download.", category:"wip"},
+            {name:"No sense starting now; break's in 45 minutes.", category:"todo"},
+            {name:"Well, I guess halfass is better than no ass, so stick a fork in this one and grab yourself a beer, champ.  You earned it.", category:"complete"},
+            {name:"Screw this; swings can do it.", category:"fib"}
           ]
     }
 
@@ -41,7 +41,8 @@ export default class DDD extends Component {
         var tasks = {
             todo: [],
             wip: [],
-            complete: []
+            complete: [],
+            fib: []
         }
 
         this.state.tasks.forEach ((t) => {
@@ -50,7 +51,7 @@ export default class DDD extends Component {
                     onDragStart = {(e) => this.onDragStart(e, t.name)}
                     draggable
                     className="draggable"
-                    style = {{backgroundColor: t.bgcolor}}
+                    // style = {{backgroundColor: t.bgcolor, color : t.color}}
                 >
                     {t.name}
                 </div>
@@ -63,20 +64,26 @@ export default class DDD extends Component {
                 <div className="todo"
                     onDragOver={(e)=>this.onDragOver(e)}
                     onDrop={(e)=>{this.onDrop(e, "todo")}}>
-                    <span className="task-header">To do</span>
+                    <span className="task-header">To Do</span>
                     {tasks.todo}
                 </div>
                 <div className="wip"
                     onDragOver={(e)=>this.onDragOver(e)}
                     onDrop={(e)=>{this.onDrop(e, "wip")}}>
-                    <span className="task-header">Work in progress</span>
+                    <span className="task-header">Work In Progress</span>
                     {tasks.wip}
                 </div>
-                <div className="droppable" 
+                <div className="complete" 
                     onDragOver={(e)=>this.onDragOver(e)}
                     onDrop={(e)=>this.onDrop(e, "complete")}>
                      <span className="task-header">D-U-N DONE</span>
                      {tasks.complete}
+                </div>
+                <div className="fib" 
+                    onDragOver={(e)=>this.onDragOver(e)}
+                    onDrop={(e)=>this.onDrop(e, "fib")}>
+                     <span className="task-header">The Fuckit Bucket</span>
+                     {tasks.fib}
                 </div>
 
 
