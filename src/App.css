@@ -4,6 +4,7 @@
 /*START DDD CSS*/
 .task-header {
   background-color: white;
+  color: black;
 }
 .todo {
   background-color: red;
@@ -16,9 +17,8 @@
 }
 .fib {
   background-color: brown;
+  color: white;
 }
-
-
 /*END DDD CSS*/
 
 /*START POPUP CSS*/
