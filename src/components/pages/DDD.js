@@ -7,6 +7,7 @@ export default class DDD extends Component {
         tasks: [
             {name:"It'd be done by now, but I'm waiting for the TO to download.", category:"wip"},
             {name:"No sense starting now; break's in 45 minutes.", category:"todo"},
+            {name:"70 minute poop break.", category:"todo"},
             {name:"Well, I guess halfass is better than no ass, so stick a fork in this one and grab yourself a beer, champ.  You earned it.", category:"complete"},
             {name:"Screw this; swings can do it.", category:"fib"}
           ]

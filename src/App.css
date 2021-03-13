@@ -16,8 +16,13 @@
   background-color: green;
 }
 .fib {
-  background-color: #411111;
+  background-color: #682b13;
   color: white;
+}
+.container-drag {
+  border-color: black;
+  border-width: 5px;
+  display: flex;
 }
 /*END DDD CSS*/
 
