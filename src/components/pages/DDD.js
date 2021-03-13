@@ -50,22 +50,22 @@ export default class DDD extends Component {
                 <div key={t.name} 
                     onDragStart = {(e) => this.onDragStart(e, t.name)}
                     draggable
-                    className="draggable"
-                    // style = {{backgroundColor: t.bgcolor, color : t.color}}
-                >
-                    {t.name}
+                    className="draggable">
+                    <li>{t.name}</li>
                 </div>
+             
             );
         });
 
         return (
             <div className="container-drag">
+                
                 <h2 className="header">h2 tag line</h2>
                 <div className="todo"
                     onDragOver={(e)=>this.onDragOver(e)}
                     onDrop={(e)=>{this.onDrop(e, "todo")}}>
                     <span className="task-header">To Do</span>
-                    {tasks.todo}
+                   {tasks.todo}
                 </div>
                 <div className="wip"
                     onDragOver={(e)=>this.onDragOver(e)}
@@ -85,6 +85,7 @@ export default class DDD extends Component {
                      <span className="task-header">The Fuckit Bucket</span>
                      {tasks.fib}
                 </div>
+            
 
 
             </div>
