@@ -2,14 +2,24 @@ import React, { Component } from 'react';
 
 import '../../App.css';
 
-export default class DDD extends Component {
+export default class FinalChecklist extends Component {
     state = {
         tasks: [
-            {name:"It'd be done by now, but I'm waiting for the TO to download.", category:"wip"},
-            {name:"No sense starting now; break's in 45 minutes.", category:"todo"},
-            {name:"70 minute poop break.", category:"todo"},
-            {name:"Well, I guess halfass is better than no ass, so stick a fork in this one and grab yourself a beer, champ.  You earned it.", category:"complete"},
-            {name:"Screw this; swings can do it.", category:"fib"}
+            
+            {name:"Perform Cabin Checklist.", category:"todo"},
+            {name:"Perform Deck Checklist.", category:"todo"},
+            {name:"Perform Power Transition Checklist.", category:"todo"},
+            {name:"Perform Comms Checklist.", category:"todo"},
+            {name:"Perform Navigation And Routing Checklist.", category:"todo"},
+            {name:"If trip will include night operations, perform Exterior Lighting Checklist.", category:"todo"},
+            {name:"Perform Engine Room Checklist and Main Engine Start Procedure.", category:"todo"},
+            {name:"Function test throttles by advancing each main engine momentarily.", category:"todo"},
+            {name:"Function test gears by momentarily placing each transmission into forward and reverse.", category:"todo"},
+            {name:"Function test bow thruster by momentarily commanding left and right.", category:"todo"},
+            {name:"Verify immediate area and route are clear.", category:"todo"},
+            {name:"Verify pressures and temps are in the green or at least showing a change.", category:"todo"},
+            {name:"After departure, stow lines and bumpers.", category:"todo"},
+            
           ]
     }
 
@@ -43,7 +53,7 @@ export default class DDD extends Component {
             todo: [],
             wip: [],
             complete: [],
-            fib: []
+           
         }
 
         this.state.tasks.forEach ((t) => {
@@ -52,44 +62,36 @@ export default class DDD extends Component {
                     onDragStart = {(e) => this.onDragStart(e, t.name)}
                     draggable
                     className="draggable">
-                    <li>{t.name}</li>
+                    <div className="items">{t.name}</div>
                 </div>
              
             );
         });
 
         return (
+            <>
+            <h2 className="header">Every trip starts with a checklist.  Here's our final checklist before departure.</h2>
+            <h4 className="header">Click and drag from red to green as the operations are completed.</h4>
             <div className="container-drag">
-                
-                <h2 className="header">h2 tag line</h2>
                 <div className="todo"
                     onDragOver={(e)=>this.onDragOver(e)}
                     onDrop={(e)=>{this.onDrop(e, "todo")}}>
                     <span className="task-header">To Do</span>
                    {tasks.todo}
                 </div>
-                <div className="wip"
-                    onDragOver={(e)=>this.onDragOver(e)}
-                    onDrop={(e)=>{this.onDrop(e, "wip")}}>
-                    <span className="task-header">Work In Progress</span>
-                    {tasks.wip}
-                </div>
+                
                 <div className="complete" 
                     onDragOver={(e)=>this.onDragOver(e)}
                     onDrop={(e)=>this.onDrop(e, "complete")}>
-                     <span className="task-header">D-U-N DONE</span>
+                     <span className="task-header">Completed</span>
                      {tasks.complete}
                 </div>
-                <div className="fib" 
-                    onDragOver={(e)=>this.onDragOver(e)}
-                    onDrop={(e)=>this.onDrop(e, "fib")}>
-                     <span className="task-header">The Fuckit Bucket</span>
-                     {tasks.fib}
-                </div>
+                
             
 
 
             </div>
+            </>
         );
     }
 }

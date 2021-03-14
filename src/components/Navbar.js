@@ -49,11 +49,11 @@ function Navbar() {
           </li>
           <li className='nav-item'>
             <Link
-              to='/ddd'
+              to='/finalchecklist'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              DDD
+              Checklists
             </Link>
           </li>
           <li

@@ -5,6 +5,20 @@
 .task-header {
   background-color: white;
   color: black;
+  
+}
+.items {
+  
+  padding: 10px 0px 10px 0px;
+}
+.draggable {
+  animation: mymove 1.25s ease-out;
+
+  
+}
+@keyframes mymove {
+  from {background-color: white;}
+  to {background-color: transparent;}
 }
 .todo {
   background-color: red;
@@ -15,14 +29,16 @@
 .complete {
   background-color: green;
 }
-.fib {
-  background-color: #682b13;
-  color: white;
-}
+
 .container-drag {
-  border-color: black;
-  border-width: 5px;
+  
+ 
   display: flex;
+}
+.header {
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 /*END DDD CSS*/
 
