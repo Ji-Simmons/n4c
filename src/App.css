@@ -1,6 +1,16 @@
 * {
   font-family: 'Lexend Mega', sans-serif;
 }
+
+.text-block {
+  margin: 80px 40px 40px;
+  border: 2px solid black;
+  border-radius: 40px;
+  padding: 25px;
+  background: rgba(255,255,255, 0.75);
+  text-align: justify;
+}
+
 /*START DDD CSS*/
 .task-header {
   background-color: white;
