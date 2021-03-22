@@ -19,9 +19,9 @@ export default function AboutUs() {
 
     return (
         <div className='aboutus'>
-              <img className='himage' src="https://images.unsplash.com/photo-1515238152791-8216bfdf89a7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3904&q=80"></img>
+              <img className='himage' style={{filter: `blur(4px)`,}} src="https://images.unsplash.com/photo-1515238152791-8216bfdf89a7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3904&q=80"></img>
               <div style={{
-            transform: `translateY(${offset * -8}px)`,
+            transform: `translateY(${offset * -4.5}px)`, 
           }} className='text-block'>
         
         <h4><p>Ji grew up on the water in Florida.  Some of my earliest memories are from when I was four or five, sitting on my dads lap at the helm of our first boat- a late 1960's era 14' Orlando Clipper trihull.  I started sailing through the Bradenton Yacht Club when I was ten and continued until my family and I relocated to Vermont shortly after my 15th birthday.  Life and location can change anyone's focus, and mine was no different- without access to water, my attention turned to aviation.  College, work, military service and life in general followed for the next 20 years or so.  After separating from the military, I decided to stay in Utah.  Then I met Conni.  </p>
