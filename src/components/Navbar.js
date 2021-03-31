@@ -47,7 +47,12 @@ function Navbar() {
               About Us
             </Link>
           </li>
+
+          {/*    TEST POPUP     */}
+          <li><a href="#test-popup" data-effect="mfp-zoom-in">Zoom</a></li>
           <li className='nav-item'>
+            {/*    /TEST POPUP   */}
+
             <Link
               to='/finalchecklist'
               className='nav-links'
@@ -62,7 +67,7 @@ function Navbar() {
             onMouseLeave={onMouseLeave}
           >
             <Link
-              // to='/snowdrift'
+              
               className='nav-links'
               onClick={closeMobileMenu}
             >
@@ -90,7 +95,9 @@ function Navbar() {
           </li>
         </ul>
         <Button />
+        
       </nav>
+      
     </>
   );
 }
